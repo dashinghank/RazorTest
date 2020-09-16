@@ -1,0 +1,16 @@
+﻿@page
+@model PrivacyModel
+
+<footer><a asp-page="/Index">首頁</a></footer>
+@{
+
+}
+<div>
+    @Model.LastUpdateTime
+    <form method="POST" asp-page-handler="MyPPost">
+        <button type="submit">
+            PostToTable
+        </button>
+    </form>
+   
+</div>

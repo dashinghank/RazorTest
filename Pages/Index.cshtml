@@ -1,0 +1,35 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+
+    <form method="POST" asp-page-handler="MyQuery">
+        <input type="hidden" name="testtext" value="ggg" />
+        <button type="submit">
+            ggg
+        </button>
+        <a asp-page="/Privacy">Client端Privacy</a>
+        <a asp-page="/Page1">Client端Page1</a>
+    </form>
+    <form method="POST" asp-page-handler="MyPage">
+        <button type="submit">
+            用Post的Page1
+        </button>
+    </form>
+    <form method="POST" asp-page-handler="MyPrivacy">
+        <input name="testtext" value="ggg" />
+        <button type="submit">
+             用Post的Privacy
+        </button>
+    </form>
+
+
+
+
+
+
+
+</div>
