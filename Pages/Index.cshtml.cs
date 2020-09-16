@@ -26,12 +26,17 @@ namespace razortest.Pages
 
         public IActionResult OnPostMyPage()
         {
-            return RedirectToPage("Page1");
+            return RedirectToPage("Paget");
         }
 
         public IActionResult OnPostMyPrivacy()
         {
             return RedirectToPage("Privacy");
+        }
+
+        public IActionResult OnPostToPage1()
+        {
+            return RedirectToPage("Page1");
         }
     }
 }

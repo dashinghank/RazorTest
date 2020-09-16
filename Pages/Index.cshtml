@@ -5,7 +5,12 @@
 }
 
 <div class="text-center">
+    <form method="POST" asp-page-handler="ToPage1">
+        <button type="submit">
+            abc
+        </button>
 
+    </form>
     <form method="POST" asp-page-handler="MyQuery">
         <input type="hidden" name="testtext" value="ggg" />
         <button type="submit">
@@ -22,7 +27,7 @@
     <form method="POST" asp-page-handler="MyPrivacy">
         <input name="testtext" value="ggg" />
         <button type="submit">
-             用Post的Privacy
+            用Post的Privacy
         </button>
     </form>
 

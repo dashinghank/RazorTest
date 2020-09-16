@@ -1,0 +1,100 @@
+﻿@page
+@model razortest.Pages.PagetModel
+@{
+}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>獎項</th>
+                        <th>允許開獎</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            Grand JP
+                        </td>
+                        <td>
+                            @if (Model.boolArray[4] == true)
+                            {
+                                <input type="checkbox" name="availableJp" checked>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="availableJp">
+                            }
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Mega JP
+                        </td>
+                        <td>
+                            @if (Model.boolArray[3] == true)
+                            {
+                                <input type="checkbox" name="availableJp" checked>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="availableJp">
+                            }
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Major JP
+                        </td>
+                        <td>
+                            @if (Model.boolArray[2] == true)
+                            {
+                                <input type="checkbox" name="availableJp" checked>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="availableJp">
+                            }
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Minor JP
+                        </td>
+                        <td>
+                            @if (Model.boolArray[1] == true)
+                            {
+                                <input type="checkbox" name="availableJp" checked>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="availableJp">
+                            }
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Mini JP
+                        </td>
+                        <td>
+                            @if (Model.boolArray[0] == true)
+                            {
+                                <input type="checkbox" name="availableJp" checked>
+                            }
+                            else
+                            {
+                                <input type="checkbox" name="availableJp">
+                            }
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
